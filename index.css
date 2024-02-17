@@ -1,0 +1,86 @@
+body {
+    background-color: hsl(216, 12%, 8%)
+}
+
+#ratingPageWords {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#ratingPageRatings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#thankYouPage{
+    display: flex;
+    justify-content: center; 
+}
+
+h1 {
+    font-family: Overpass;
+    font-weight: 700;
+    font-size: 30px; 
+    color: hsl(0, 0%, 100%);
+    margin: 1%;
+}
+
+p1 {
+    font-family: Overpass;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+    margin: 2%;
+}
+
+p2 {
+    font-family: Overpass; 
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(25, 97%, 53%);
+    margin: 2%;
+}
+
+#ratingBtn {
+    border-radius: 100%;
+    background-color: hsl(217, 12%, 63%);
+    color:hsl(0, 0%, 100%);
+}
+
+.submitBtn {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    color: hsl(213, 19%, 18%);
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2%;
+}
+
+/* Hover Color for Rating Button */
+#ratingBtn:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%)
+}
+
+/* Selected Color for Rating Button */
+/* #ratingBtn {
+    Orange: hsl(25, 97%, 53%)
+} */
+
+/* Hover Color for Submit Button */
+.submitBtn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%)
+}
+
+/* Selected Color for Submit Button */
+/* #submitBtn {
+    Orange: hsl(25, 97%, 53%)
+} */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
