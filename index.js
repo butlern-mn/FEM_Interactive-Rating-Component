@@ -16,22 +16,22 @@
 //         };
 //     }
 
-const ratingButtons = document.querySelectorAll("ratingBtn")
+const ratingButtons = document.querySelectorAll(".ratingBtn");
 // console.log(ratingButtons);
 
 let ratingValue = "";
 let selectedRating = document.getElementsById("selectedRating");
 
-const submitBtn = document.querySelector(".submitBtn");
+const submitButton = document.querySelector(".submitBtn");
 
-for (let i = 0; i < ratingBtn.length; i++) {
-    ratingBtn[i].addEventListener('click', function() {
+for (let i = 0; i < ratingButtons.length; i++) {
+    ratingButtons[i].addEventListener("click", function() {
         ratingValue = i + 1;
     });
 }
 
-submitBtn.addEventListener("click", function (e) {
+submitButton.addEventListener("click", function (e) {
     e.preventDefault();
-    console.log(ratingValue);
+    // console.log(ratingValue);
     selectedRating.innerText = ratingValue;
   });
