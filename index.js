@@ -20,7 +20,7 @@ const ratingButtons = document.querySelectorAll(".ratingBtn");
 // console.log(ratingButtons);
 
 let ratingValue = "";
-let selectedRating = document.getElementsById("selectedRating");
+let selectedRating = document.getElementById("selectedRating");
 
 const submitButton = document.querySelector(".submitBtn");
 
@@ -34,4 +34,13 @@ submitButton.addEventListener("click", function (e) {
     e.preventDefault();
     // console.log(ratingValue);
     selectedRating.innerText = ratingValue;
+
+  });
+
+  submitButton.addEventListener("click", function (e) {
+    // e.preventDefault();
+    // console.log(ratingValue);
+    document.getElementById("thankYouPage").style.display = "flex";
+    document.getElementById("ratingPage").style.display = "none";
+    
   });

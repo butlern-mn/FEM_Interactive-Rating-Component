@@ -21,10 +21,11 @@
     padding: 20px;
     border-radius: 30px;
     background-color: hsl(213, 19%, 18%);
-    display: flex;
+    display: none;
     flex-direction: column; 
     /* justify-content: center;  */
 }
+
 #ratingPageWords {
     display: flex;
     flex-direction: column;
@@ -78,24 +79,24 @@ p2 {
     margin: 2%;
 }
 
-/* Hover Color for Rating Button */
-/* .ratingBtn:hover {
+/* Hover Color for Rating Button medium grey*/
+.ratingBtn:hover {
     background-color: hsl(216, 12%, 54%);
-    color: hsl(0, 0%, 100%);
-} */
+    /* color: hsl(0, 0%, 100%); */
+}
 
 /* Selected Color for Rating Button */
-/* .ratingBtn {
-    Orange: hsl(25, 97%, 53%)
-} */
+.ratingBtn:focus {
+    background-color: hsl(25, 97%, 53%)
+}
 
 /* Hover Color for Submit Button */
-/* .submitBtn:hover {
+.submitBtn:hover {
     background-color: hsl(0, 0%, 100%);
     color: hsl(216, 12%, 54%);
-} */
+}
 
-/* Selected Color for Submit Button */
+/* Selected Color for Submit Button - don't need know as the page disappears and switches to another page upon clicking */
 /* .submitBtn {
     Orange: hsl(25, 97%, 53%)
 } */
